@@ -100,9 +100,13 @@ function clearForm(){
     }
     
     budgetNumberInput.value = "";
+    output.innerText = "";
+    output.classList.add('hide');
 }
 
 addEntryButton.addEventListener("click", addEntry);
 
 // below is for Calculate Remaining Calories button logic:
 calorieCounter.addEventListener("submit", calculateCalories);
+
+clearButton.addEventListener("click", clearForm);
